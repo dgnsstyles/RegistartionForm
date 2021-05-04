@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		845470592640B95000FB76C9 /* RepasoStacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845470582640B95000FB76C9 /* RepasoStacks.swift */; };
+		845470622640DB4200FB76C9 /* RegistrationFormConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845470612640DB4200FB76C9 /* RegistrationFormConstants.swift */; };
 		8493C5B8264094F600FE4A49 /* RegistrationFormApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8493C5B7264094F600FE4A49 /* RegistrationFormApp.swift */; };
 		8493C5BA264094F600FE4A49 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8493C5B9264094F600FE4A49 /* ContentView.swift */; };
 		8493C5BC264094F800FE4A49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8493C5BB264094F800FE4A49 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		845470582640B95000FB76C9 /* RepasoStacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepasoStacks.swift; sourceTree = "<group>"; };
+		845470612640DB4200FB76C9 /* RegistrationFormConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFormConstants.swift; sourceTree = "<group>"; };
 		8493C5B4264094F600FE4A49 /* RegistrationForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RegistrationForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8493C5B7264094F600FE4A49 /* RegistrationFormApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFormApp.swift; sourceTree = "<group>"; };
 		8493C5B9264094F600FE4A49 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +58,8 @@
 			children = (
 				8493C5B7264094F600FE4A49 /* RegistrationFormApp.swift */,
 				8493C5B9264094F600FE4A49 /* ContentView.swift */,
+				845470612640DB4200FB76C9 /* RegistrationFormConstants.swift */,
+				845470582640B95000FB76C9 /* RepasoStacks.swift */,
 				8493C5BB264094F800FE4A49 /* Assets.xcassets */,
 				8493C5C0264094F800FE4A49 /* Info.plist */,
 				8493C5BD264094F800FE4A49 /* Preview Content */,
@@ -139,6 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8493C5BA264094F600FE4A49 /* ContentView.swift in Sources */,
+				845470592640B95000FB76C9 /* RepasoStacks.swift in Sources */,
+				845470622640DB4200FB76C9 /* RegistrationFormConstants.swift in Sources */,
 				8493C5B8264094F600FE4A49 /* RegistrationFormApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

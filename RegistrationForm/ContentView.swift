@@ -9,7 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     @State var firstName = ""
+    @State var secondName = ""
     @State var lastName  = ""
+    @State var lastName2 = ""
     @State var password = ""
     @State var passwordAgain = ""
     var body: some View {
@@ -17,21 +19,29 @@ struct ContentView: View {
             VStack{
                 Form {
                     Section {
-                        TextField("Primer Nombre", text: $firstName)
-                        TextField("Apellido", text: $lastName)
-                    }
-                    Section(footer: Text("Tu Contraseña debe tener minimo 8 caracteres")) {
-                        SecureField("Escribe tu Contraseña", text: $password)
-                        SecureField("Confirma tu contraseña", text: $passwordAgain)
+                        TextField(
+                            RegistrationFormConstants.RegistrationForm.primerNombre,
+                            text: $firstName)
+                        TextField(RegistrationFormConstants.RegistrationForm.segundoNombre, text: $secondName)
+                        TextField(RegistrationFormConstants.RegistrationForm.apellidoPaterno, text: $lastName)
+                        TextField(RegistrationFormConstants.RegistrationForm.apellidoMaterno, text: $lastName2)
                         
                     }
-                  
+                    Section(header: Text(RegistrationFormConstants.RegistrationForm.headerSectionPassword)) {
+                        SecureField(
+                            RegistrationFormConstants.RegistrationForm.securePassword,
+                            text: $password)
+                        SecureField(
+                            RegistrationFormConstants.RegistrationForm.confirmPassword, text: $passwordAgain)
+                        
+                    }
+                    
                 }
                 Button(action: {
                     // hacer algo con la data del usuario...
                 }, label: {
                     Text("Continuar")
-                        .frame(width: 250, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                      .frame(width: 250, height: 50, alignment: .center)
                         .background(Color.blue)
                         .foregroundColor(Color.white)
                         .cornerRadius(8)
